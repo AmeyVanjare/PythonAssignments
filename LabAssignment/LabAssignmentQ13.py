@@ -1,5 +1,6 @@
+import re
 def correct(sen):
-    sen=sen.replace("  "," ")
+    sen=re.sub(r"\s+",' ',sen)
     sen=sen.replace(".",". ")
     return sen
 if __name__=="__main__":
